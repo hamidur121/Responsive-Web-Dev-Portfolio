@@ -185,7 +185,16 @@ footer input[type="text"], footer input[type="email"], footer textarea {
     border: none;
 }
 
+
+
+
+
+
+
+
 /* Responsive Media query */
+
+/* Mobile Device responsive */
 .hide{
     display: none;
 }
@@ -195,12 +204,70 @@ footer input[type="text"], footer input[type="email"], footer textarea {
         flex-direction: column;
         background-color: hsl(0, 0%, 100%)
     }
+    .section-description{
+        padding: 20px;
+        justify-content: center;
+    }
     
 }   
 
 @media screen and (max-width: 576px) {
-    .resume-container{
+    .resume-container, 
+    nav,
+    nav>ul,
+    .secondary-bg{
         flex-direction: column;
     
+    }
+    footer{
+        padding: 20px
+    }
+
+    .footer-column{
+        width: 100%;
+        
+    }
+
+    footer input[type="text"], footer input[type="email"], footer textarea {
+        width: calc(100% -40px);
+    }
+
+    .about, .secondary-bg{
+        padding: 5px 20px;
+        
+    }
+
+    .banner{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .btn-primary{
+
+        margin: 10px;
+    }
+    nav> ul{
+        gap: 20px;
+    }
+
+
+}
+
+
+/* Tablet specific media query */
+
+@media screen and (min-width: 576px) and (max-width:992px){
+    .banner{
+        flex-direction: column;
+    }
+    .skils-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
